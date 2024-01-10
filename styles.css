@@ -119,6 +119,7 @@ h1 {
 	grid-auto-columns: 1fr;
 	align-items: center;
 	padding-bottom: 100px;
+	padding-left: 10%
 }
 
 .social-icons span {
