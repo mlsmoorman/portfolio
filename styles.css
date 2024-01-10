@@ -1,5 +1,5 @@
 * {
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: lightcoral;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -24,10 +24,10 @@ body {
 .nav-link {
 	display: block;
 	float: left;
-	border-bottom: 1px solid #555;
-	color: white;	
+	color: black;	
 	text-decoration: none;
 	padding-left: 30px;
+	padding-right: 30px;
 	margin: 5px 0 5px 0;
 }
 
@@ -36,7 +36,7 @@ li:first-of-type {
 }
 
 li:hover {
-	background-color: #555;
+	background-color: #23a6d5;
 	color: white;
 }
 
@@ -77,5 +77,31 @@ h1 {
 	}
 	100% {
 		background-position: 0% 50%;
+	}
+}
+
+/* ===== Project Tile Formatting ===== */
+#projects h2{
+	font-size: 25px;
+	text-align:center;
+}
+
+.tiles {
+	display: grid;
+	grid-template-columns: 40% 40%;
+	justify-content: center;
+}
+
+.project-tile p {
+	font-size: 20px;
+	margin-bottom: 25px;
+	text-align: auto; 
+}
+
+@media (max-width: 800px) {
+	.tiles {
+		display: grid;
+		grid-template-columns: 40%;
+		justify-content: center;
 	}
 }
