@@ -1,13 +1,21 @@
 * {
 	border: 1px solid red;
 }
-/* Navigation Bar Formatting */
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+/* ===== Navigation Bar Formatting ===== */
 .nav {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #333;
+	background-color: lightcoral;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -23,18 +31,21 @@
 	margin: 5px 0 5px 0;
 }
 
+li:first-of-type {
+	padding-right: 30px;
+}
 
-.nav-link:hover {
+li:hover {
 	background-color: #555;
 	color: white;
-  }
+}
 
-  .active {
+.active {
 	background-color: #04AA6D;
 	color: white;
-  }
+}
 
-  /* Body of Document Formatting */
+/* ===== Welcome Section Formatting ===== */
 #welcome-section {
 	width: 100vw;
 	height: 100vh;
@@ -54,4 +65,17 @@ span > h1, h3 {
 
 h1 {
 	font-size: 50px;
+}
+
+/* ===== Background Animation ===== */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
