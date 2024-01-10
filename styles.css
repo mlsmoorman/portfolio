@@ -36,7 +36,22 @@
 
   /* Body of Document Formatting */
 #welcome-section {
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+}
+
+span > h2 {
 	text-align: center;
 	width: 100%;
-	height: 100%;
+	margin: auto;
+	padding-top: 40vh;
+}
+
+span > h1, h3 {
+	margin: 0;
+}
+
+h1 {
+	font-size: 50px;
 }
